@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiro - Chatbot Emocional</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.png">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Kiro - Chatbot Emocional</h1>
+    </header>
+
+    <!-- Modal de Saludo y Estado de Ánimo -->
+    <div class="modal" id="emotionModal" role="dialog" aria-labelledby="emotionModalLabel" aria-hidden="true">
+        <div class="modal-content">
+            <h3 id="emotionModalLabel">¡Hola! Soy Kiro 😊</h3>
+            <p>¿Cómo te sientes hoy?</p>
+            <div class="emotions">
+                <button class="emotion" id="happy" aria-label="Feliz">
+                    <img src="happy.png" alt="Feliz" />
+                    <p>Feliz</p>
+                </button>
+                <button class="emotion" id="sad" aria-label="Triste">
+                    <img src="sad.png" alt="Triste" />
+                    <p>Triste</p>
+                </button>
+                <button class="emotion" id="neutral" aria-label="Ninguno">
+                    <img src="neutral.png" alt="Ninguno" />
+                    <p>Ninguno</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chatbot -->
+    <main class="chat-container" role="main">
+        <section class="chat-header">
+            <h2>Conversación con Kiro</h2>
+        </section>
+        <section class="chat-body" id="chatBody">
+            <!-- Mensajes aparecerán aquí -->
+        </section>
+        <section class="chat-footer">
+            <input type="text" id="userInput" placeholder="Escribe un mensaje..." aria-label="Escribir mensaje" />
+            <button id="sendBtn" aria-label="Enviar mensaje">Enviar</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
